@@ -6,6 +6,26 @@ const ChatBox = () => {
   const [messages, setMessages] = useState([]);
   const chatEndRef = useRef(null);
 
+  // Function to randomly choose a transformation and apply it
+  const applyRandomTransformation = (text) => {
+    const transformations = [
+      { name: "Word Count", func: (t) => `Word Count: ${t.split(' ').length}` },
+      { name: "Vowel Count", func: (t) => `Vowel Count: ${t.match(/[aeiou]/gi)?.length || 0}` },
+      { name: "Consonant Count", func: (t) => `Consonant Count: ${t.match(/[^aeiou\s\d\W]/gi)?.length || 0}` },
+      { name: "Most Frequent Letter", func: (t) => {
+        const freq = {};
+        t.replace(/[^\W_]/g, letter => {
+          freq[letter] = (freq[letter] || 0) + 1;
+        });
+        const mostFrequent = Object.keys(freq).reduce((a, b) => freq[a] > freq[b] ? a : b, '');
+        return `Most Frequent Letter: ${mostFrequent}`;
+      }},
+    ];
+
+    const randomTransformation = transformations[Math.floor(Math.random() * transformations.length)];
+    return `${randomTransformation.name}: ${randomTransformation.func(text)}`;
+  };
+
   const sendMessage = () => {
     const input = document.getElementById("message-input");
     const message = input.value.trim();
@@ -13,8 +33,13 @@ const ChatBox = () => {
       addMessage("You", message, "/src/assets/Images/user.jpeg", "user");
       input.value = "";
 
+      // Generate a random bot name
+      const botNames = ["AlphaBot", "BetaBot", "GammaBot", "DeltaBot", "EpsilonBot"];
+      const randomBotName = botNames[Math.floor(Math.random() * botNames.length)];
+
       setTimeout(() => {
-        addMessage("Bot", "This is an automatic response!", "/src/assets/Images/chatbot.png", "bot");
+        const response = applyRandomTransformation(message);
+        addMessage(randomBotName, response, "/src/assets/Images/chatbot.png", "bot");
       }, 1000);
     }
   };
