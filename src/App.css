@@ -42,7 +42,8 @@ body {
   align-items: center;
   margin-top: auto;
   padding: 10px;
-  background-color: #292b2f;
+  background-color: #b4cffd;
+  color: #020202; 
   border-radius: 5px;
 }
 
@@ -125,13 +126,13 @@ body {
 }
 
 .main .chat .message.user .content {
-  background-color: #7289da; /* Optional: Different background for user messages */
-  color: #ffffff; /* Optional: White text for user messages */
+  background-color: #b4cffd; /* Optional: Different background for user messages */
+  color: #020202; /* Optional: White text for user messages */
 }
 
 .main .chat .message.bot .content {
-  background-color: #40444b; /* Optional: Keep same background for bot messages */
-  color: #dcddde; 
+  background-color: #b4cffd; /* Optional: Keep same background for bot messages */
+  color: #020202; 
 }
 
 .main .chat .message .content .username {
