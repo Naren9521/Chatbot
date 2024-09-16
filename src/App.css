@@ -139,4 +139,30 @@ body {
 .chat-footer .send {
   color: #ff4081;
   font-size: 20px;
+
+}
+
+.send-btn {
+  background-color: #5eccfa;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #4cb5e4;
+}
+
+.send-btn:active {
+  background-color: #4aa8d4;
+}
+
+.send-btn svg {
+  color: white;
+  font-size: 18px;
 }
