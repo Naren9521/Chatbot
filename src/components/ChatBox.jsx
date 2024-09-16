@@ -20,6 +20,19 @@ const ChatBox = () => {
         const mostFrequent = Object.keys(freq).reduce((a, b) => freq[a] > freq[b] ? a : b, '');
         return `Most Frequent Letter: ${mostFrequent}`;
       }},
+      { name: "Reverse Text", func: (t) => `Reversed: ${t.split('').reverse().join('')}` },
+      { name: "Uppercase", func: (t) => `Uppercase: ${t.toUpperCase()}` },
+      { name: "Lowercase", func: (t) => `Lowercase: ${t.toLowerCase()}` },
+      { name: "Capitalize Each Word", func: (t) => `Capitalized: ${t.replace(/\b\w/g, char => char.toUpperCase())}` },
+      { name: "Character Count", func: (t) => `Character Count: ${t.length}` },
+      { name: "Remove Vowels", func: (t) => `Without Vowels: ${t.replace(/[aeiou]/gi, '')}` },
+      { name: "Remove Consonants", func: (t) => `Without Consonants: ${t.replace(/[^aeiou\s]/gi, '')}` },
+      { name: "Repeat Words", func: (t) => `Repeated Words: ${t.split(' ').map(word => `${word} ${word}`).join(' ')}` },
+      { name: "Replace Spaces with Underscores", func: (t) => `Underscores: ${t.replace(/\s+/g, '_')}` },
+      { name: "Shuffle Characters", func: (t) => {
+        const shuffle = (word) => word.split('').sort(() => 0.5 - Math.random()).join('');
+        return `Shuffled: ${t.split(' ').map(shuffle).join(' ')}`;
+      }}
     ];
 
     const randomTransformation = transformations[Math.floor(Math.random() * transformations.length)];
