@@ -38,10 +38,9 @@ Make sure vite and npm is installed on your machine.
    
    Visit `http://localhost:3000` in your browser to see the app.
 
-## Folder Structure
-
-```bash
-Chatbot/
+## Folder Structure 
+  ```bash
+ Chatbot/
 ├── public/
 │   ├── favicon.ico
 │   ├── index.html
