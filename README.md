@@ -48,7 +48,10 @@ Make sure vite and npm is installed on your machine.
 │   └── assets/
 │       └── logo.png
 ├── src/
-│   ├── assets/
+│   ├── assets/images/
+│   │           ├── chatbot.png
+│   │           ├── sitare.jpg
+│   │           └── user.jpg
 │   ├── components/
 │   │   ├── ChatBox.jsx
 │   │   ├── Message.jsx
@@ -81,6 +84,6 @@ This project is licensed under the MIT License.
 
 ## Colaborators
 - **`Narendra Singh Chauhan`**
-- - **`Anmol Kumar`**
+- **`Anmol Kumar`**
 
 
