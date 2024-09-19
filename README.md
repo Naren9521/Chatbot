@@ -21,6 +21,13 @@ Make sure vite and npm is installed on your machine.
 ### Installation
 
 1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Naren9521/Chatbot.git
+   cd Chatbot
+
+
+1. **Clone the repository**
    git clone https://github.com/Naren9521/Chatbot.git
    cd Chatbot
 
