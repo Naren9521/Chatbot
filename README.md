@@ -25,16 +25,17 @@ Make sure vite and npm is installed on your machine.
    ```bash
    git clone https://github.com/Naren9521/Chatbot.git
    cd Chatbot
-
-
+   ```
 
 2. **Install dependencies**:
    ```bash
    npm install
+   ```
 
 4. **Run the development server**:
    ```bash
    npm run dev
+   ```
    
    Visit `http://localhost:3000` in your browser to see the app.
 
@@ -60,9 +61,7 @@ Make sure vite and npm is installed on your machine.
 ├── README.md
 ├── vite.config.js
 └── LICENSE
-
-**. **
-
+```
 
 ### Component Breakdown
 
@@ -79,3 +78,9 @@ Make sure vite and npm is installed on your machine.
 ## License
 
 This project is licensed under the MIT License.
+
+## Colaborators
+**Narendra Singh Chauhan**
+**Anmol Kumar**
+
+
