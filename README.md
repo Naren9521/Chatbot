@@ -27,20 +27,20 @@ Make sure vite and npm is installed on your machine.
    cd Chatbot
 
 
-1. **Clone the repository**
-   git clone https://github.com/Naren9521/Chatbot.git
-   cd Chatbot
 
 2. **Install dependencies**:
+   ```bash
    npm install
 
-3. **Run the development server**:
+4. **Run the development server**:
+   ```bash
    npm run dev
    
    Visit `http://localhost:3000` in your browser to see the app.
 
 ## Folder Structure
 
+```bash
 Chatbot/
 ├── public/
 │   ├── favicon.ico
