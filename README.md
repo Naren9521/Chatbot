@@ -80,7 +80,7 @@ Make sure vite and npm is installed on your machine.
 This project is licensed under the MIT License.
 
 ## Colaborators
-**Narendra Singh Chauhan**
-**Anmol Kumar**
+-**Narendra Singh Chauhan**
+-**Anmol Kumar**
 
 
