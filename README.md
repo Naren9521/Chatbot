@@ -61,6 +61,9 @@ Make sure vite and npm is installed on your machine.
 ├── vite.config.js
 └── LICENSE
 
+**. **
+
+
 ### Component Breakdown
 
 - **`ChatBox.jsx`**: Manages the chat interface, including message display and user input.
