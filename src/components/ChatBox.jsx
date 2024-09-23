@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
+import userImage from '../assets/images/user.jpeg'; // Adjust if needed
+import botImage from '../assets/images/chatbot.png'; // Adjust if needed
+
 const ChatBox = () => {
   const [messages, setMessages] = useState([]);
   const chatEndRef = useRef(null);
@@ -43,7 +46,7 @@ const ChatBox = () => {
     const input = document.getElementById("message-input");
     const message = input.value.trim();
     if (message) {
-      addMessage("You", message, "/src/assets/Images/user.jpeg", "user");
+      addMessage("You", message, userImage, "user");
       input.value = "";
 
       // Generate a random bot name
@@ -52,7 +55,7 @@ const ChatBox = () => {
 
       setTimeout(() => {
         const response = applyRandomTransformation(message);
-        addMessage(randomBotName, response, "/src/assets/Images/chatbot.png", "bot");
+        addMessage(randomBotName, response, botImage, "bot");
       }, 1000);
     }
   };
@@ -77,8 +80,8 @@ const ChatBox = () => {
   return (
     <div className="main">
       <div className="header">
-        <img src="/src/assets/Images/chatbot.png" alt="Group profile" />
-        <span className="title">My chatbot</span>
+        <img src={botImage} alt="Group profile" />
+        <span className="title">My Chatbot</span>
       </div>
       <div className="chat" id="chat-box">
         {messages.map((message, index) => (

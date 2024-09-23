@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAdjust, faHashtag, faComments } from '@fortawesome/free-solid-svg-icons';
+import SitareImage from '../assets/images/sitare.jpeg'; 
 
 const Sidebar = ({ toggleTheme }) => {
   return (
@@ -18,7 +19,7 @@ const Sidebar = ({ toggleTheme }) => {
         <span>  Web-development</span>
       </div>
       <div className="user">
-        <img src="/src/assets/Images/sitare.jpeg" alt="User profile" />
+        <img src={SitareImage}alt="User profile" />
         <span>Anmol/Narendra</span>
       </div>
     </div>
